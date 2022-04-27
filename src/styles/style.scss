@@ -1,5 +1,27 @@
 
+a{
+    color: rgb(1, 17, 17);
+    text-decoration: none;
+    // padding: 1px;
+}
+
+*{
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 
 
-@import "./nav"
+@import "./nav";
+@import "./search";
+@import "./footer";
+@import "./picture";
