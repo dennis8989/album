@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
 import Picture from "../components/Picture";
 
 const Homepage = () => {
   const [data, setData] = useState("");
   const auth = "563492ad6f9170000100000132e9a03b97264e19b38ff3e57245c6c5";
-  const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=15";
+  const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=20";
   const searchURL = `https://api.pexels.com/v1/search?query=${data}&page=1&per_page=15`;
   const Find = async () => {
     const dataFetch = await fetch(initialURL, {
@@ -19,6 +19,7 @@ const Homepage = () => {
     setData(parseData.photos);
     console.log("data :>> ", data);
   };
+  useEffect(()=>{Find();},[])
   return (
     // <div>123</div>
     <div style={{ minHeight: "90vh" }}>

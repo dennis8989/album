@@ -102,6 +102,7 @@ body {
 .pictures .picture .imgContainer {
   overflow: hidden;
   height: 40vh;
+  width: 40vh;
 }
 
 .pictures .picture .imgContainer img {
@@ -109,12 +110,12 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .pictures .picture .imgContainer img:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.9);
+          transform: scale(1.9);
 }
 /*# sourceMappingURL=style.css.map */
