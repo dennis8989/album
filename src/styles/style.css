@@ -18,6 +18,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.addmore {
+  border: 0ch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
 .nav {
   background-color: #c73cc0;
 }
